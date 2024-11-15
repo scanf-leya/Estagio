@@ -4,21 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100dvw;
+            height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 90px;
+        }
+        .inv{
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+        }
+        .card{
+            border-radius: 7%;
+            background-color: cadetblue;
+            color:white ;
+            padding: 35px;
+            font-size: 20px;  
+            margin: 10px;
+        }
+    </style>
 </head>
+
 <body>
-    <table>
+    <table border="">
         <tr>
-            <th rowspan="3">Mundo</th>
+            <th rowspan="3" class="inv card" >Mundo</th>
         </tr>
         <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
+            <td class="card">1</td>
+            <td class="card">2</td>
+            <td class="card">3</td>
         </tr>
         <tr>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
+            <td class="card">4</td>
+            <td class="card">5</td>
+            <td class="card">6</td>
+        </tr>
+    </table>
+    <table border="">
+        <tr>
+            <td class="card">1</td>
+            <td class="card">2</td>
+            <td class="card">3</td>
+        </tr>
+        <tr>
+            
+            <td colspan="2" class="card">4</td>
+            <td class="card" class="card">5</td>
+        </tr>
+        <tr>
+            <td class="card">6</td>
+            <td colspan="2" class="card">7</td>
+            
         </tr>
     </table>
 </body>
